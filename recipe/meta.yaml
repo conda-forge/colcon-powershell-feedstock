@@ -1,17 +1,17 @@
 {% set name = "colcon-powershell" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://github.com/colcon/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: abf26984d9175ccc591ac1fd04a0df7e7631a0c639d7d65672cc49ec1f3373b8
+  sha256: 74ced69b0de09672de2aa2911c12bd7c64213fafb824570fda154e1e48ec3c9a
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
