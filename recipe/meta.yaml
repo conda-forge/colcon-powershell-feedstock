@@ -1,5 +1,5 @@
 {% set name = "colcon-powershell" %}
-{% set version = "0.3.6" %}
+{% set version = "0.4.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/colcon/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: abf26984d9175ccc591ac1fd04a0df7e7631a0c639d7d65672cc49ec1f3373b8
+  sha256: 6cd48f237b835d0da4934048bbcf35b626dcfe270938871a8a7362daabc74e96
 
 build:
   number: 0
